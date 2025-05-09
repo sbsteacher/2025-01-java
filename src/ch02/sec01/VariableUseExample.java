@@ -5,6 +5,7 @@ public class VariableUseExample {
         int hour = 3;
         int minute = 5;
         System.out.println(hour + "시간 " + minute + "분");
+        System.out.println("3시간 5분");
         // (1) hour + "시간 "
         // (2) 3 + "시간"
         // (3) "3" + "시간"
@@ -17,7 +18,7 @@ public class VariableUseExample {
         // (10) "3시간 5분" >> 연산의 결과
         // (11) 연산의 결과를 println이 콘솔에 출력한다.
 
-        int totalMinute = minute + (hour * 60); //185, 480
+        int totalMinute = minute + hour * 60; //185, 480
         System.out.println("총 " + totalMinute + "분");
     }
 }

@@ -3,10 +3,11 @@ package ch02.sec01;
 public class VariableInitializationExample {
     public static void main(String[] args) {
         int value; //변수 선언(변수명 당 최초 한번), 선언을 할 때 데이터 타입 지정! (int는 정수 타입)
+        int value3;
         // 변수 사용 방법 2가지: 읽기(read), 쓰기(write)
-        value = 15; // 읽기 / 쓰기
+        value = 15; // 쓰기 = 는 대입연산자
 
-        int value2 = 20; //읽기 / 쓰기
+        int value2 = 20; //쓰기
         /*
         에러(예외) 종류 크게 2가지
         - 컴파일 에러: 실행을 할 수 없음. 컴파일 자체가 불가능. 문법적 문제가 있거나 명확한 문제가 보이면...

@@ -4,7 +4,9 @@ public class RandomNumber {
     public static void main(String[] args) {
         //API, Math.random() double 타입 리턴, 0.0000000 ~ 0.99999999, 절대 1이 안 나온다.
 
-        System.out.println( Math.random() );
+        System.out.println();
+        double v = Math.random();
+        System.out.println( v );
 
         double value = 0.99999;
         double result = value * 10.0; //9.9999

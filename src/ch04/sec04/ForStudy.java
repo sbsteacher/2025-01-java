@@ -25,7 +25,7 @@ public class ForStudy {
         System.out.println(i1++);
         System.out.println(i1++);
         System.out.println(i1++);
-        System.out.println(i1++);
+        System.out.println(i1);
 
         System.out.println("--------------------------");
 

@@ -2,7 +2,7 @@ package ch04;
 
 public class Mission14Result {
     public static void main(String[] args) {
-        int star = (int)(Math.random() * 6.0) + 4; // 4~9 랜덤값
+        int star = 4; // 4~9 랜덤값
         System.out.println("star: " + star);
         for(int i=1; i<=star; i++) {
             int underCnt = star - i;
@@ -30,14 +30,10 @@ public class Mission14Result {
 
         System.out.println("===========================");
         for(int i=star; i>0; i--) {
-
             for(int k=1; k<=star; k++) {
                 System.out.print(k < i ? "_" : "*");
             }
             System.out.println();
-
-
-
         }
 
         //star = 4

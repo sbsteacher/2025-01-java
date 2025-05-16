@@ -9,18 +9,18 @@ public class Mission03Result {
         int score = scanner.nextInt(); //-10, 0, 120
         System.out.println("score: " + score);
 
-        String grade = "D";
-        String sigh = "0";
 
         if(score > 100 || score < 0) {
             System.out.println("잘못된 점수입니다.");
-        } else {
+        } else { // 0 ~ 100
+            String grade = "D";
             switch ( score / 10 ) {
                 case 10, 9: grade = "A"; break;
                 case 8: grade = "B"; break;
                 case 7: grade = "C"; break;
             }
 
+            String sigh = "0";
             int modResult = score % 10;
             if( score < 70 ) {
                 sigh = "";
@@ -29,7 +29,7 @@ public class Mission03Result {
             } else if( modResult <= 3 ) {
                 sigh = "-";
             }
-            System.out.printf("%s%s\n", grade, sigh);
+            System.out.printf("%s%s학점\n", grade, sigh);
         }
         /*
             100점 초과이거나 0점 미만이면 "잘못된 점수 입니다." 출력

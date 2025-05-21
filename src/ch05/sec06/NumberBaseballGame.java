@@ -23,8 +23,8 @@ public class NumberBaseballGame {
         Scanner scanner = new Scanner(System.in);
         while(true) {
             System.out.printf("숫자 %d개를 입력> ", answerArr.length);
-            String input = scanner.nextLine();
-            //System.out.println("input: " + input);
+            String input = scanner.nextLine(); //"567"
+            System.out.println("input: " + input);
             String[] inputStrArr = input.split("");
             if(inputStrArr.length != answerArr.length) {
                 continue;
@@ -43,6 +43,7 @@ public class NumberBaseballGame {
                         } else {
                             b++;
                         }
+                        break;
                     }
                 }
             }
